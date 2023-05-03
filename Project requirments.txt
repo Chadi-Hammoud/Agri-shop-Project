@@ -39,7 +39,7 @@ Database Tables:
 User (from default table Django)
 Farmer (Name, phone, DOB, Nationality, #user)
 Client(Name, phone, address, #user)
-Product( ProductName, UnitPrice, Unitprice, QuantityInStock, Category, description )
+Product( ProductName, UnitPrice, ProductImage, QuantityInStock, Category, description )
 Order( #client, dateOrder, TypeOfPaymant)
 detailsOrder(#order, #product, quantity)
 
