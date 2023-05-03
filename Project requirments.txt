@@ -1,0 +1,52 @@
+Hello, please try to prepare the exercise based on local Django web application (Backend &Frontend) + Database (MySQL on Cloud)
+
+Agri Shop for Farmers in Django Python Application
+---------------------------------------------------
+
+Software Requirements:
+----------------------
+Front-End  :  HTML5, CSS3, and Django
+Back-End   :  Django, MySQL
+
+ADMIN (Backend):
+----------------
+Login
+Approve the Farmer Login
+Manage users & Permissions
+Manage products
+Manage orders
+
+FARMER (Backend)
+-----------------
+Login
+View all Orders
+Update order Status
+Manage Product
+Create Product, description, quantity, Unit Price, Category
+Upload Product images
+
+
+Client User(Frontend)
+---------------------
+Register webpage
+Login webpage
+Search the product by category
+View product details
+View his order
+
+Database Tables:
+-----------------
+User (from default table Django)
+Farmer (Name, phone, DOB, Nationality, #user)
+Client(Name, phone, address, #user)
+Product( ProductName, UnitPrice, Unitprice, QuantityInStock, Category, description )
+Order( #client, dateOrder, TypeOfPaymant)
+detailsOrder(#order, #product, quantity)
+
+------------------------------------------------------------------------------------
+Guidelines: 
+You have to work on this project in teams of two. 
+You must inform me of your team members before starting the first milestone of the project,
+ and you must complete the entire project as a team.
+Tasks for each project milestone should be divided up so that each team member does a fair share of the work required.
+Please try to use Trello application or clickup application to manage the tasks between the members of team
