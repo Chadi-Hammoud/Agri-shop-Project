@@ -1,7 +1,6 @@
 from django.contrib import admin
 from Models.models import *
 
-
 # Register your models here.
 admin.site.register(Farmer)
 admin.site.register(Client)
