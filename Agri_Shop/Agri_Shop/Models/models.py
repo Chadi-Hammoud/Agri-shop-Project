@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from datetime import date
 
 
 class Farmer(models.Model):
@@ -8,7 +9,6 @@ class Farmer(models.Model):
     dob = models.DateField()
     nationality = models.CharField(max_length=255)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-
     def __str__(self):
         return self.name
     class Meta:
