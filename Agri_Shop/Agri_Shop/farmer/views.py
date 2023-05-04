@@ -3,8 +3,11 @@ from django.http import HttpResponse
 
 
 
-def Framer_LogIn(request):
-    return HttpResponse("Login Page")
+# def Framer_LogIn(request):
+#     return HttpResponse("Login Page")
+
+def home(request):
+    return render(request, 'farmer/login.html', {"user": None})
 
 
 def Framer_ViewAllOrders(request):
