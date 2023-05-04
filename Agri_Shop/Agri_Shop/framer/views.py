@@ -1,4 +1,7 @@
+from django.shortcuts import render
 from django.http import HttpResponse
+
+
 
 def Framer_LogIn(request):
     return HttpResponse("Login Page")
