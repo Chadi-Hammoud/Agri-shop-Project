@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Models',
     'farmer',
     'client',
+    'Accounts', 
         
 ]
 
