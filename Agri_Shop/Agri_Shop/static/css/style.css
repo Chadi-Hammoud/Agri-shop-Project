@@ -26,7 +26,7 @@
 @import url(bootsnav.css);
 @import url(owl.carousel.min.css);
 @import url(jquery-ui.css);
-@import url(nice-select.css);
+/* @import url(nice-select.css); */
 @import url(baguetteBox.min.css);
 
 /*------------------------------------------------------------------
@@ -2189,7 +2189,7 @@
 }
  .new-account-login h5 {
      font-size: 18px;
-     color: #1111111;
+     color: #111111;
      font-weight: 600;
 }
  .new-account-login h5 a:hover{

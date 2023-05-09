@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -17,13 +18,14 @@
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
 </head>
+
 <body>
-   
+
     {% include 'partiel/navbar.html' %}
     {% block content %}
 
     {% endblock content %}
-    
+
     {% include 'partiel/footer.html' %}
 
 
@@ -31,16 +33,16 @@
     <script src="{% static 'js/popper.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <!-- ALL PLUGINS -->
-    <script src="{% static 'js/jquery.superslides.min.js' %}"></script>
     <script src="{% static 'js/bootstrap-select.js' %}"></script>
     <script src="{% static 'js/inewsticker.js' %}"></script>
     <script src="{% static 'js/bootsnav.js' %}"></script>
     <script src="{% static 'js/images-loded.min.js' %}"></script>
     <script src="{% static 'js/isotope.min.js' %}"></script>
-    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
     <script src="{% static 'js/baguetteBox.min.js' %}"></script>
     <script src="{% static 'js/form-validator.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
     <script src="{% static 'js/contact-form-script.js' %}"></script>
     <script src="{% static 'js/custom.js' %}"></script>
 </body>
+
 </html>

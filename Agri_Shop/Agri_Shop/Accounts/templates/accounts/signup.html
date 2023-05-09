@@ -1,8 +1,10 @@
-<!-- {% extends 'base.html' %}-->
-<!-- {% block content %}  -->
-<center style="margin-left: auto;margin-right: auto; width: 200px;">
-<form action="#" method="post">
+{% extends 'base.html' %}
+{% block content %}
+<center style="margin-left: auto; margin-right: auto; width: 200px; margin-top: 50px; margin-bottom: auto;">
+<form action="/accounts/login/" method="post">
+	<h1 style="color: green;">Sign IN</h1>
 	{% csrf_token %}
+	
  	<input type="text" name="name" placeholder="Full Name" required="" class="form-control"><br>
  	<input type="text" name="username" placeholder="Userame" required="" class="form-control"><br>
  	<input type="email" name="email" placeholder="Email" required="" class="form-control"><br>
@@ -10,25 +12,15 @@
  	<input type="password" name="pass1" placeholder="Password" required="" class="form-control"><br>
  	<input type="password" name="pass2" placeholder="  Confirm Password" required="" class="form-control"><br>
 
-
-
-
-  <!-- <div class="form-group">
-  	<p align="left">Patient or Docter</p>
- <select name="post" >-->
-	         <!-- <option default="">Select Gender</option> -->
-	         <!-- <option  name="Client">Docter </option>
-	         <option  name="Patient">Patient</option>
-	         </select><br>
-  </div> -->
-  <button type="submit" class="btn btn-primary">Submit</button>
+<button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
 </center>
+<!-- <center style="margin-left: auto;margin-right: auto; width: 200px;">
+	<form class="site-form" action="index.html" method="post">
+		{{form}}
+		<input type="submit" />
+	</form>
+</center> -->
 
-<!-- 
-{% endblock content %}  -->
-
-<form class="site-form" action="index.html" method="post">
-    {{form}}
-    <input type="submit"
-</form>
+{% endblock content %} 
