@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 def homePage(request):
     return render(request,'pages/index.html',{"user": None}) 
 def cart(request):
-    return render(request,'partiel/cart.html')
+    return render(request,'pages/cart.html')
 def shop(request):
     return render(request,'pages/shop.html')
 
