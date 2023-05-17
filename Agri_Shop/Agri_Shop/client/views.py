@@ -17,7 +17,7 @@ def signup_view(request):
             return redirect('accounts:login') 
     else:
         form = UserCreationForm()
-    return render(request, 'pages/signup.html', {'form': form})
+    return render(request, 'registration/signup.html', {'form': form})
     # if request.method =='POST':
     #     form =UserCreationForm(request.POST)
     #     if form.is_valid():
@@ -30,4 +30,8 @@ def signup_view(request):
 
 
 def login_view(request):
-    return render(request, 'pages/login.html')
+    return render(request, 'registration/login.html')
+
+
+def checkout_view(request):
+    return render(request,'pages/checkout.html')

@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,8 +42,6 @@ INSTALLED_APPS = [
     'Models',
     'farmer',
     'client',
-    'Accounts', 
-        
 ]
 
 MIDDLEWARE = [
@@ -79,25 +78,25 @@ WSGI_APPLICATION = 'Agri_Shop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-DATABASES = {  
-    'default': {  
-        'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'Agri_Shop_DB',  
-        'USER': 'admin',  
-        'PASSWORD': 'VwHRnypW',  
-        'HOST': 'mysql-124559-0.cloudclusters.net',  
-        'PORT': '19833',  
-        'OPTIONS': {  
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
-        }  
-    }  
-}  
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+# DATABASES = {  
+#     'default': {  
+#         'ENGINE': 'django.db.backends.mysql',  
+#         'NAME': 'Agri_Shop_DB',  
+#         'USER': 'admin',  
+#         'PASSWORD': 'VwHRnypW',  
+#         'HOST': 'mysql-124559-0.cloudclusters.net',  
+#         'PORT': '19833',  
+#         'OPTIONS': {  
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+#         }  
+#     }  
+# }  
 
 
 # Password validation

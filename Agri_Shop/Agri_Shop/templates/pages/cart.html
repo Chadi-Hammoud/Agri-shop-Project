@@ -9,12 +9,12 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Imagini</th>
-                                <th>Nume Produs</th>
-                                <th>Pret</th>
-                                <th>Cantitate</th>
+                                <th>Images</th>
+                                <th>Product name</th>
+                                <th>Against</th>
+                                <th>Amount</th>
                                 <th>Total</th>
-                                <th>Elimina din Cos</th>
+                                <th>Remove from the basket</th>
                             </tr>
                         </thead>
                         
@@ -29,7 +29,7 @@
                     <div class="input-group input-group-sm">
                         <input class="form-control" placeholder="Introduceti codul cuponului" aria-label="Coupon code" type="text">
                         <div class="input-group-append">
-                            <button class="btn btn-theme" type="button">Aplica Cupon</button>
+                            <button class="btn btn-theme" type="button">Apply coupon</button>
                         </div>
                     </div>
                 </div>
@@ -45,9 +45,9 @@
             <div class="col-lg-8 col-sm-12"></div>
             <div class="col-lg-4 col-sm-12">
                 <div class="order-box">
-                    <h3>Sumar Comanda</h3>
+                    <h3>Add the order</h3>
                     <div class="d-flex">
-                        <h4>Sub Total</h4>
+                        <h4>subTotal</h4>
                         <div class="ml-auto font-weight-bold"> 0 </div>
                     </div>
                     <div class="d-flex">
@@ -56,13 +56,13 @@
                     </div>
                     <hr class="my-1">
                     <div class="d-flex">
-                        <h4>Coupon Discount</h4>
+                        <h4>couponDiscount</h4>
                         <div class="ml-auto font-weight-bold"> 0 </div>
                     </div>
                    
                     <div class="d-flex">
                         <h4>Cost livrare</h4>
-                        <div class="ml-auto font-weight-bold"> gratuit </div>
+                        <div class="ml-auto font-weight-bold"> free </div>
                     </div>
                     <hr>
                     <div class="d-flex gr-total">
@@ -71,7 +71,7 @@
                     </div>
                     <hr> </div>
             </div>
-            <div class="col-12 d-flex shopping-box"><a href="checkout.html" class="ml-auto btn hvr-hover">Checkout</a> </div>
+            <div class="col-12 d-flex shopping-box"><a href="{% url 'checkout' %}" class="ml-auto btn hvr-hover">Checkout</a> </div>
         </div>
 
     </div>
